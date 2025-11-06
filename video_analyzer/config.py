@@ -52,6 +52,8 @@ class Config:
             logger.error(f"Error loading config: {e}")
             raise
 
+    def get_config(self):
+        return dict(self.config)
     def get(self, key: str, default: Any = None) -> Any:
         """Get configuration value with optional default."""
         return self.config.get(key, default)

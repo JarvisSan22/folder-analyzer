@@ -9,10 +9,10 @@ with open("requirements.txt", "r", encoding="utf-8") as fh:
     requirements = [line.strip() for line in fh if line.strip() and not line.startswith("#")]
 
 setup(
-    name="video-analyzer",
-    version="0.1.1",
-    author="Jesse White",
-    description="A tool for analyzing videos using Vision models",
+    name="video-image-analyzer",
+    version="0.2.1",
+    author="Jarvis",
+    description="A tool for analyzing videos and images using Vision models",
     long_description=long_description,
     long_description_content_type="text/markdown",
     packages=find_packages(),
@@ -21,11 +21,14 @@ setup(
             'config/*.json',
             'prompts/**/*',
         ],
+        'image_analyzer':[
+         "prompts/*"]
     },
     install_requires=requirements,
     entry_points={
         "console_scripts": [
             "video-analyzer=video_analyzer.cli:main",
+            "image-analyzer=image_analyzer.cli:main"
         ],
     },
     python_requires=">=3.8",

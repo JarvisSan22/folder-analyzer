@@ -4,9 +4,10 @@ from typing import Optional, Dict, Any
 from .llm_client import LLMClient
 
 class OllamaClient(LLMClient):
-    def __init__(self, base_url: str = "http://localhost:11434"):
+    def __init__(self, base_url: str = "http://localhost:11434",model:str="llama3.2-vision"):
         self.base_url = base_url.rstrip('/')
         self.generate_url = f"{self.base_url}/api/generate"
+        self.model=model
 
     def generate(self,
         prompt: str,

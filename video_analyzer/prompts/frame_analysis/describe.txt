@@ -12,7 +12,6 @@ Video Transcript
 {TRANSCRIPT}
 
 
-
 Your Task
 You are synthesizing multiple frame descriptions into a cohesive video summary. You have access to the first frame and detailed notes about all subsequent frames.
 Step 1: Review Process
@@ -64,7 +63,9 @@ Writing Style Guidelines
 
 Write in present tense
 Use clear, active voice
+dont reference yourself
 Maintain objective descriptions
+Keep to the Format
 Avoid speculation beyond provided notes
 Include specific details that build credibility
 Connect scenes with smooth transitions
